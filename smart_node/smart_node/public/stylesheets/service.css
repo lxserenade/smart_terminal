@@ -1,0 +1,9 @@
+#location_filter{
+    float: left;
+    width: 200px;
+    margin: 8px 0 0 5px;
+}
+
+button{
+	margin: 8px 0 0 16px;
+}

@@ -1,0 +1,187 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.current a{
+    color:#ffffff !important;
+}
+
+.page{
+	margin: 10px auto; 
+	width: 80%;
+}
+
+.filter-select{
+  margin:10px 20px;
+}
+.filter-title{
+    display: block;
+    font-size: 18pt;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    width:100px;
+    float:left;
+    margin:10px 20px;
+}
+
+.date-filter{
+        display: block;
+    font-size: 18pt;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    width:100px;
+    float:left;
+    margin:10px 20px;
+}
+
+.filter-select input{
+float:left;
+width:200px;
+margin:10px 20px;
+}
+
+.filter-select button{
+float:left;
+width:100px;
+margin:10px 20px;
+}
+
+
+.dropdown-menu li a{
+ cursor:pointer;
+}
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-body{
+    margin: 5px 8px 10px 8px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 400px;
+}
+.modal-body a{
+	height: 18px;
+    line-height: 18px;
+    color: #005EAC;
+    text-decoration: none;
+    font-size: 10pt;
+    float: left;
+    width:20%;
+	cursor: default;
+	position: relative;
+	overflow: hidden;
+    margin: 6px 10px;
+   
+}
+.modal-body a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #ccc;
+    shape-rendering: crispEdges;
+}
+.brush .extent{
+    fill-opacity: .325;
+    shape-rendering: crispEdges;
+    fill: #B4AD46
+}
+
+/*设置文件数监控图表样式*/
+.line {
+    fill: none;
+    stroke: rgb(110, 135, 215);
+    stroke-width: 2px;
+}
+
+.focus-circle {
+    stroke: #6E87D7;
+}
+
+
+/*grid css*/
+.grid .tick {
+    stroke: #F1F1F1;
+    opacity: 1;
+    pointer-events: none;
+}
+.grid path {
+      stroke-width: 0;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: brown;
+}
+
+.legend line {
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+path.slice {
+    stroke-width: 2px;
+}
+
+.labels text {
+    font-size: 11px;
+    font-family: 'Open sans';
+    fill: rgb(51, 51, 51);
+}
+
+polyline {
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+
+path.slice{
+    stroke-width:2px;
+}
+
+polyline{
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+
+
+/**bar charts css */
+.bar {
+  fill: #46B4AC;
+}
+
+.stack{
+/*  stroke: white;
+  fill-opacity: .6;*/
+  fill: steelblue;
+}
+
+/**range charts css**/
+.active .xis {
+    font-size: 50px;
+}
+
+.active .label {
+    font-size: 20px;
+}
+

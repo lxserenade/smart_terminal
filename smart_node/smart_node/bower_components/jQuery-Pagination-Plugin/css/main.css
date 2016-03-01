@@ -1,0 +1,46 @@
+body {
+  font-family: '微软雅黑';
+  font-size: 100%;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-size: 48px;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1.5em;
+  font-size: 32px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 32px;
+  font-size: 2em;
+}
+
+.pagewrapper {
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 20px 50px;
+}
+
+.pagination-wrapper {
+  text-align: center;
+}
+
+.code {
+  background-color: rgba(255,255, 255, 1);
+}
+
+/* hr */
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  border-bottom: 3px dashed #cccccc;
+}

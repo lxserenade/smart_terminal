@@ -1,0 +1,19 @@
+<% include header.ejs %>
+ <script src="/bower_components/d3-tip/index.js"></script>
+<script src="/javascripts/index.js"></script>
+ 
+ 
+ <div class = "filter-select">
+  		<div class="filter-title">条件查询：</div>
+  		<input id = "category_filter" type="text" class="form-control" placeholder="按某业务过滤" data-toggle="modal" 
+              data-target="#cat-filter">
+         <input id = "location_filter" type="text" class="form-control" placeholder="按某终端过滤" data-toggle="modal" 
+              data-target="#loc-filter">
+        <button onclick='chart()' type="submit" class="btn btn-default">查询</button>
+
+  </div>
+
+<div class='page' style="margin: 20px">
+
+</div>
+<% include footer.ejs %>

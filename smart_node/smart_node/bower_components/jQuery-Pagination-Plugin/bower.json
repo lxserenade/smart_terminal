@@ -1,0 +1,27 @@
+{
+  "name": "jQuery-Pagination-Plugin",
+  "version": "1.3.2",
+  "homepage": "http://youngdze.github.io/Pagination",
+  "authors": [
+    "youngdze <youngdze94@gmail.com>"
+  ],
+  "description": "A jQuery pagination plugin that you can configure its total pages and add callback.",
+  "main": "js/jquery.yzePagination.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "pagination",
+    "jQuery",
+    "jQuery-plugin",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

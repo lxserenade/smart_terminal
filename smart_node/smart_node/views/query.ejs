@@ -1,0 +1,70 @@
+<% include header.ejs %>
+ <script src="/bower_components/d3-tip/index.js"></script>
+<script src="/javascripts/query.js"></script>
+<link rel='stylesheet' href='/stylesheets/query.css'/> 
+ 
+ <div class="row">
+      <div class='col-sm-4 date-filter'>
+      	起至日期选择：
+      </div>
+        <div class='col-sm-2'>
+            <div class="form-group" style="margin: 8px 0 0 5px">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <div class='col-sm-2'>
+            <div class="form-group" style="margin: 8px 0 0 5px">
+                <div class='input-group date' id='datetimepicker2'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+		
+
+</div>
+
+</div>
+
+ <div class = "row filter-select">
+  		<div class="col-sm-4 filter-title">条件查询：</div>
+  		<div class='col-sm-2'>
+  			<button id = "category_filter" class= "btn btn-primary" data-toggle="modal" 
+              data-target="#cat-filter">业务选择</button>
+              </div>
+
+         <div class='col-sm-2'><button id = "location_filter"  class= "btn btn-primary"  data-toggle="modal" 
+              data-target="#loc-filter">终端选择</button>
+              </div>
+            <div class='col-sm-2 filter-title'><input id="date_average_enable" name="checkbox" type="checkbox">按日平均</div>
+             <div class='col-sm-2 filter-title'><input id="loc_average_enable" name="checkbox" type="checkbox">按终端平均</div>
+
+  </div>
+  <div class="selected">
+  	<h4>已选择业务:</h4>
+  	<div class="selected-cat">
+  	默认全选
+  	</div>
+  	<h4>已选择终端:</h4>
+  	<div class="selected-loc">
+  	默认全选
+  	</div>
+  	
+  	<div class='query-btn'>
+  		<button onclick='query()' type="submit" class="btn btn-success">查询</button>
+  		</div>
+
+  </div>
+   <div class='page' style="margin: 20px">
+
+</div>
+<% include footer.ejs %>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+   <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/bower_components/d3/d3.min.js"></script>
+    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link rel='stylesheet' href='/stylesheets/style.css'/>	
+  </head>
+  <body>
+  <div id="top">
+
+        <!-- .navbar -->
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class ="container-fluid page-name" style="float:left">
+           <div class="collapse navbar-collapse navbar-ex1-collapse">
+           <ul class="nav navbar-nav"><li> <a><%=title%></a>
+           </li>
+           </ul>
+           </div></div>
+
+          <div class="container-fluid" style="float:right">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+              <!-- .nav -->
+              <ul class="nav navbar-nav">
+                 <li class="dropdown "> 
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    图表
+                    <b class="caret"></b>
+                  </a> 
+                <ul class="dropdown-menu">
+                   <li><a href="./">每日点击量统计</a></li>
+                    <li>  <a href="./service">指定某日业务统计</a>  </li>
+                    <li>  <a href="./terminal">终端总点击量统计</a>  
+                    <li>  <a href="./category_average">业务平均点击量统计</a> 
+                    <li>  <a href="./query">复合查询</a>                          
+                    </li> 
+                </ul>
+                  </li>
+                <li <% if (page_name === 'list') { %>class="current" <% } %> > <a href="./list">数据列表</a>  </li>
+                <!-- <li class="dropdown ">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Filter
+                    <b class="caret"></b>
+                  </a> 
+                  <ul class="dropdown-menu">
+                    <li id='category_filter'> <a data-toggle="modal" 
+   						data-target="#cat-filter">category</a></li>
+                    <li id='location_filter'> <a data-toggle="modal" 
+   						data-target="#loc-filter">location</a></li>
+                  </ul>
+                </li> -->
+              </ul><!-- /.nav -->
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav><!-- /.navbar -->
+      </div>
+
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="cat-filter" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" >
+               按栏目过滤
+            </h4>
+         </div>
+         <div id='cat-filter-modal' class="modal-body">
+            
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary"  data-dismiss="modal">
+               选择
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="loc-filter" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" >
+               按位置过滤
+            </h4>
+         </div>
+         <div id='loc-filter-modal' class="modal-body">
+            
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary"  data-dismiss="modal">
+               选择
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>

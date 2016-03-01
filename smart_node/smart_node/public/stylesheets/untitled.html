@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <style>
+    body {margin: 0; padding: 0;}
+    .Header, .Footer {height: 100px; background-color: #369;}
+    .Left, .Right {
+        position: absolute;
+        top: 100px;
+        width: 100px;
+        height: 300px;
+        background-color: pink;
+    }
+    .Left {left: 0;}
+    .Right {right: 0;}
+    .Cont {margin: 0 100px;}
+        .con1, .con2 {height: 150px;}
+        .con1 {background-color: silver;}
+        .con2 {background-color: slateGrey;}
+    </style>
+</head>
+<body>
+    <div class="Header">Header</div>
+    <div class="Left">Left</div>
+    <div class="Cont">
+        <div class="con1">con1</div>
+        <div class="con2">con2</div>
+    </div>
+    <div class="Right">Right</div>
+    <div class="Footer">Footer</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+
+.date-filter{
+    margin:10px 50px;
+    width: 200px;
+}
+.filter-title{
+      margin:10px 50px;
+    width: 200px;
+}
+#date_average_enable{
+   vertical-align: middle;
+}
+.query-btn{
+
+}
+.cat-select{
+    height: 18px;
+    line-height: 18px;
+    color: #005EAC;
+    text-decoration: none;
+    font-size: 10pt;
+    float: left;
+    width:20%;
+    cursor: default;
+    position: relative;
+    overflow:hidden;
+    -o-text-overflow:ellipsis;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    margin: 6px 10px;
+}
+
+.loc-select{
+    height: 18px;
+    line-height: 18px;
+    color: #005EAC;
+    text-decoration: none;
+    font-size: 10pt;
+    float: left;
+    width:20%;
+    cursor: default;
+    position: relative;
+    overflow:hidden;
+    -o-text-overflow:ellipsis;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    margin: 6px 10px;
+}
+.filter-select input{
+    float:none;
+    width: 20px;
+    margin:0;
+
+}
+.selected{
+    margin:10px 50px;
+}
+.selected-cat{
+    margin: 10px 70px;
+}
+.selected-loc{
+     margin: 10px 70px;
+}
+.cat-select input[type=checkbox]{
+    margin-right: 5px;
+}
+
+.modal-dialog{
+width: 1000px
+   
+}
+.modal-body a{
+    height: 18px;
+    line-height: 18px;
+    color: #005EAC;
+    text-decoration: none;
+    font-size: 10pt;
+    float: none;
+    width:20%;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+    margin: 6px 10px;
+   
+}
+
+.filter-select button{
+    float:none;
+width:100px;
+margin:10px 20px;
+}
